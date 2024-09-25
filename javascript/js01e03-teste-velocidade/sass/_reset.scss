@@ -1,0 +1,98 @@
+// =======================> Partials
+
+@use "./variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(20, 31, 64, 0.5),
+      rgba(20, 31, 64, 0.1)
+    ),
+    url(../img/img-background.jpg) center/cover fixed no-repeat;
+  font-family: v.$secondary-ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 8rem 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+  // font-size: calc(10px + 0.6vh);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: v.$primary-ff;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  font-style: italic;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  width: 100%;
+  font-family: v.$primary-ff;
+  font-weight: 600;
+  background-color: hsl(v.$primary-clr);
+  color: hsl(v.$off-black-clr);
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(246, 67, 72, 0.9);
+  transition: v.$ease-animation;
+
+  &:hover {
+    color: hsl(v.$off-white-clr);
+    background: hsl(v.$off-black-clr);
+    box-shadow: 0 0 8px rgba(246, 67, 72, 0.9);
+  }
+}

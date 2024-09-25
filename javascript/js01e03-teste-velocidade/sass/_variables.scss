@@ -1,0 +1,34 @@
+// =======================> Typography
+
+$primary-ff: "Bitter", serif;
+$secondary-ff: "Rubik", sans-serif;
+
+// =======================> Colors
+
+$primary-clr: 358 91% 61%;
+// $primary-dark-clr: #000;
+// $primary-ligh-clr: #000;
+$secondary-clr: 220 51% 36%;
+// $secondary-dark-clr: #000;
+// $secondary-ligh-clr: #000;
+
+$contrast-clr: 214 35% 61%;
+$accent-clr: 215 30% 79%;
+// $accent-dark-clr: #000;
+// $accent-ligh-clr: #000;
+$text-clr: 214 50% 9%;
+
+$off-white-clr: 45 29% 97%; /* RGB: 250 248 245 */
+$off-black-clr: 0 0% 9%; /* RGB: 23 23 23 */
+$success-clr: 160 100% 35%; /* RGB: 0 179 119 */
+$warning-clr: 45 89% 52%; /* RGB: 242 187 22 */
+$error-clr: 355 92% 57%; /* RGB: 246 44 61 */
+
+// =======================> Transitions / Shadows
+
+$ease-animation: all 0.5s ease-in-out;
+$linear-animation: all 0.5s linear;
+
+$box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.2);
+$box-shadow-white-light: 0 0 10px rgba(255, 255, 255, 0.3);
+$box-shadow-strong: 0 0 10px rgba(0, 0, 0, 0.5);

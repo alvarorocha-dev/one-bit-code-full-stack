@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Awesome Script -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon Script -->
+    <link
+      rel="shortcut icon"
+      href="../dist/assets/img/iconrock-red.svg"
+      type="image/x-icon"
+    />
+    <!-- JS Script -->
+    <script src="../dist/assets/js/script.js" defer></script>
+    <!-- CSS Script -->
+
+    <link rel="stylesheet" href="../dist/assets/css/main.min.css" />
+
+    <title>JavaScript 01 - 04 Cálculo de Dano</title>
+  </head>
+  <body>
+    <main class="container">
+      <div
+        class="wrapper"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <!-- Start left column -->
+        <div class="left-column">
+          <!-- Start img container -->
+          <div class="img-container">
+            <figure>
+              <img
+                src="../dist/assets/img/iconrock-red.svg"
+                class="img-icon"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="1000"
+                alt="Ilustração de em Desenvolvedor FrontEnd com uma estilo herói e um notebook"
+              />
+            </figure>
+            <figure>
+              <img
+                src="../dist/assets/img/logo-onebitcode.svg"
+                class="img-poster"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="1000"
+                alt="Ilustração de em Desenvolvedor FrontEnd com uma estilo herói e um notebook"
+              />
+            </figure>
+          </div>
+          <!-- End img container -->
+          <!-- Start Socials -->
+
+          <div class="socials">
+            <a
+              href="https://alrocha.com.br/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-solid fa-desktop"></i
+            ></a>
+            <a
+              href="https://github.com/alvarorocha-dev/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/alrochadesign/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <!-- End Socials -->
+          <!-- Start Credits -->
+          <div class="credit">
+            <!-- <p class="credits">Curso OneBitCode</p> -->
+          </div>
+          <!-- End Credits -->
+        </div>
+        <!-- End left column -->
+        <!-- Start right column -->
+        <div class="right-column">
+          <!-- Start title -->
+          <div class="title">
+            <h1>JavaScript 01 - 04 Cálculo de Dano</h1>
+            <div class="divider"></div>
+          </div>
+          <!-- Start title -->
+          <!-- Start statement -->
+          <div class="statement">
+            <details close>
+              <summary>Visualizar Enunciado</summary>
+              <p>
+                Escreva um programa que permita inserir o nome e o poder de
+                ataque de um personagem, depois o nome, a quantidade de pontos
+                de vida, o poder de defesa de outro personagem e se ele possui
+                um escudo, e então calcule a quantidade de dano causado baseado
+                nas seguintes regras:
+              </p>
+              <p>
+                1 - Se o poder de ataque for maior do que a defesa e o defensor
+                não possuir um escudo, o dano causado será igual a diferença
+                entre o ataque e a defesa.
+                <br />
+                2 - Se o poder de ataque for maior do que a defesa e o defensor
+                possuir um escudo, o dano causado será igual a metade da
+                diferença entre o ataque e a defesa (arredondado para baixo).
+                <br />
+                3 - Se o poder de ataque for menor ou igual a defesa, o dano
+                causado será 0.
+              </p>
+              <p>
+                Por fim, o programa deve subtrair a quantidade de dano da
+                quantidade de pontos de vida do personagem defensor e exibir na
+                tela a quantidade de dano e as informações atualizadas de ambos
+                os personagens.
+              </p>
+            </details>
+          </div>
+          <!-- End statement -->
+
+          <!-- Start Form -->
+          <div class="form-container">
+            <form id="form">
+              <!-- Start Atacante -->
+              <label
+                >Nome do Atacante:
+                <input
+                  type="text"
+                  id="inNome"
+                  class="input-form"
+                  required
+                  autofocus
+              /></label>
+
+              <label
+                >Poder de Ataque:
+                <input
+                  type="number"
+                  id="inAtaque"
+                  class="input-form"
+                  required
+                  min="0"
+              /></label>
+
+              <!-- End Atacante -->
+              <!-- Start Oponente -->
+              <label
+                >Nome do Oponente:
+                <input type="text" id="inOponente" class="input-form" required
+              /></label>
+
+              <label
+                >Poder de Defesa do Oponente:
+                <input
+                  type="number"
+                  id="inDefesa"
+                  class="input-form"
+                  required
+                  min="0"
+              /></label>
+              <label
+                >Pontos de Vida do Oponente:
+                <input
+                  type="number"
+                  id="inVida"
+                  class="input-form"
+                  required
+                  min="0"
+              /></label>
+              <label>O Oponente possui Escudo?</label>
+              <div class="radio-section">
+                <label for="sim"
+                  ><input
+                    name="inEscudo"
+                    type="radio"
+                    id="escudoSim"
+                    value="Sim"
+                    required
+                  />Sim</label
+                >
+
+                <label for="nao"
+                  ><input
+                    name="inEscudo"
+                    type="radio"
+                    id="escudoNao"
+                    value="Não"
+                    required
+                  />Não</label
+                >
+              </div>
+              <!-- End Oponente -->
+              <!-- Start buttons -->
+              <div class="buttons">
+                <input type="submit" class="btn" value="Calcular Dano" />
+                <input type="reset" class="btn" value="Limpar" />
+              </div>
+              <!-- End buttons -->
+            </form>
+          </div>
+          <!-- End Form -->
+          <hr />
+          <!-- Start answer -->
+          <div class="answer">
+            <p class="resp" id="outResp1"></p>
+            <p class="resp" id="outResp2"></p>
+            <p class="resp" id="outResp3"></p>
+          </div>
+          <!-- End answer -->
+        </div>
+
+        <!-- End right column -->
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Awesome Script -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon Script -->
+    <link
+      rel="shortcut icon"
+      href="../dist/assets/img/iconrock-red.svg"
+      type="image/x-icon"
+    />
+    <!-- JS Script -->
+    <script src="../dist/assets/js/script.js" defer></script>
+    <!-- CSS Script -->
+
+    <link rel="stylesheet" href="../dist/assets/css/main.min.css" />
+
+    <title>JavaScript 01 - 02 Calculadora de 4 Operações</title>
+  </head>
+  <body>
+    <main class="container">
+      <div
+        class="wrapper"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <!-- Start left column -->
+        <div class="left-column">
+          <!-- Start img container -->
+          <div class="img-container">
+            <figure>
+              <img
+                src="../dist/assets/img/iconrock-red.svg"
+                class="img-icon"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="1000"
+                alt="Ilustração de em Desenvolvedor FrontEnd com uma estilo herói e um notebook"
+              />
+            </figure>
+            <figure>
+              <img
+                src="../dist/assets/img/logo-onebitcode.svg"
+                class="img-poster"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="1000"
+                alt="Ilustração de em Desenvolvedor FrontEnd com uma estilo herói e um notebook"
+              />
+            </figure>
+          </div>
+          <!-- End img container -->
+          <!-- Start Socials -->
+
+          <div class="socials">
+            <a
+              href="https://alrocha.com.br/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-solid fa-desktop"></i
+            ></a>
+            <a
+              href="https://github.com/alvarorocha-dev/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/alrochadesign/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <!-- End Socials -->
+          <!-- Start Credits -->
+          <div class="credit">
+            <!-- <p class="credits">Curso OneBitCode</p> -->
+          </div>
+          <!-- End Credits -->
+        </div>
+        <!-- End left column -->
+        <!-- Start right column -->
+        <div class="right-column">
+          <!-- Start title -->
+          <div class="title">
+            <h1>JavaScript 01 - 02 Calculadora de 4 Operações</h1>
+            <div class="divider"></div>
+          </div>
+          <!-- Start title -->
+          <!-- Start statement -->
+          <div class="statement">
+            <details close>
+              <summary>Visualizar Enunciado</summary>
+              <p>
+                Escreva um programa em javascript que permita inserir dois
+                valores numéricos e então calcule o resultado das quatro
+                operações básicas (soma, subtração, multiplicação e divisão).
+                Após calcular os resultados o programa deve exibi-los na tela.
+              </p>
+            </details>
+          </div>
+          <!-- End statement -->
+
+          <!-- Start Form -->
+          <div class="form-container">
+            <form id="form">
+              <label
+                >Número 01:
+                <input
+                  type="number"
+                  id="inNum1"
+                  class="input-form"
+                  required
+                  autofocus
+                  min="0"
+              /></label>
+              <br />
+              <label
+                >Número 02:
+                <input
+                  type="number"
+                  id="inNum2"
+                  class="input-form"
+                  required
+                  min="0"
+              /></label>
+              <!-- Start buttons -->
+              <div class="buttons">
+                <input type="submit" class="btn" value="Realizar Operações" />
+                <input type="reset" class="btn" value="Limpar" />
+              </div>
+              <!-- End buttons -->
+            </form>
+          </div>
+          <!-- End Form -->
+          <hr />
+          <!-- Start answer -->
+          <div class="answer">
+            <p class="resp" id="outResp1"></p>
+            <p class="resp" id="outResp2"></p>
+          </div>
+          <!-- End answer -->
+        </div>
+
+        <!-- End right column -->
+      </div>
+    </main>
+  </body>
+</html>

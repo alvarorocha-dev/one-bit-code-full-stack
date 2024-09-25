@@ -1,0 +1,24 @@
+// =======================> Partials
+
+@use "./variables" as v;
+@use "./reset";
+@use "./page";
+
+/// =================================> Typography
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+// =======> Remove animations for accessibility
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// =======> Code
